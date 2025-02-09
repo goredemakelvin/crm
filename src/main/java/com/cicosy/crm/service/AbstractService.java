@@ -1,5 +1,8 @@
 package com.cicosy.crm.service;
 
-public class AbstractService {
+public abstract class AbstractService<T> {
+	
+  public abstract T save(T t);
+  
 
 }

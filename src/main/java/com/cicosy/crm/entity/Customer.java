@@ -6,7 +6,7 @@ import jakarta.persistence.Entity;
 public class Customer {
 
 	private Long id;
-	private String employeeNumber;
+	private String customerNumber;
 	
 	public Long getId() {
 		return id;
@@ -14,12 +14,14 @@ public class Customer {
 	public void setId(Long id) {
 		this.id = id;
 	}
-	public String getEmployeeNumber() {
-		return employeeNumber;
+	public String getCustomerNumber() {
+		return customerNumber;
 	}
-	public void setEmployeeNumber(String employeeNumber) {
-		this.employeeNumber = employeeNumber;
+	public void setCustomerNumber(String customerNumber) {
+		this.customerNumber = customerNumber;
 	}
+	
+	
 	
 	
 	
