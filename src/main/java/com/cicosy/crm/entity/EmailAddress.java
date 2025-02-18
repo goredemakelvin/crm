@@ -6,10 +6,10 @@ import lombok.Data;
 
 @Entity
 @Data
-public class EmailAddress  extends BaseEntity{
+public class EmailAddress extends BaseEntity {
 
-	private String email;
-	private boolean enabled;
-	@ManyToOne
-	private Contact contact;
+    private String email;
+    private boolean enabled;
+    @ManyToOne
+    private Contact contact;
 }

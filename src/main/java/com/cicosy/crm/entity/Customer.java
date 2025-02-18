@@ -8,17 +8,11 @@ import lombok.Data;
 @Data
 public class Customer extends BaseEntity {
 
-	private String customerNumber;
-	@OneToOne
-	private Contact contact;
-	@OneToOne
-	private LoyaltyPoints loyaltyPoints;
-	
-	
+    private String customerNumber;
+    @OneToOne
+    private Contact contact;
+    @OneToOne
+    private LoyaltyPoints loyaltyPoints;
 
-	
-	
-	
-	
-	
+
 }

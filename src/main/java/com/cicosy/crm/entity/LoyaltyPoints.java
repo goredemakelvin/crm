@@ -5,9 +5,9 @@ import lombok.Data;
 
 @Entity
 @Data
-public class LoyaltyPoints extends  BaseEntity{
+public class LoyaltyPoints extends BaseEntity {
 
-	private int points;
+    private int points;
 
-	
+
 }

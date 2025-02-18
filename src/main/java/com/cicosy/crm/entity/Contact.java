@@ -9,17 +9,16 @@ import java.util.List;
 
 @Entity
 @Data
-public class Contact  extends  BaseEntity{
+public class Contact extends BaseEntity {
 
-	@OneToMany
-	private List<Address> addresses;
-	@OneToMany
-	private List<Phone> phoneNumbers;
-	@OneToMany
-	private List<EmailAddress> emailAddress;
-	@ManyToOne
-	private  Customer customer;
-	
-	
+    @OneToMany
+    private List<Address> addresses;
+    @OneToMany
+    private List<Phone> phoneNumbers;
+    @OneToMany
+    private List<EmailAddress> emailAddress;
+    @ManyToOne
+    private Customer customer;
+
 
 }

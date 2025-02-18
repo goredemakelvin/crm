@@ -11,23 +11,21 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/customer")
 public class CustomerController {
 
-	
-	@PostMapping("/save")
-	public String saveCustomer(@RequestBody CustomerDto customerDto) {
-		return "";
-	}
-	
-	@GetMapping("/")
-	public String Customer() {
-		return "";
-	}
-	
-	@GetMapping("/list")
-	public String list() {
-		return "";
-	}
-	
-	
-	
-	
+
+    @PostMapping("/save")
+    public String saveCustomer(@RequestBody CustomerDto customerDto) {
+        return "";
+    }
+
+    @GetMapping("/")
+    public String Customer() {
+        return "";
+    }
+
+    @GetMapping("/list")
+    public String list() {
+        return "";
+    }
+
+
 }

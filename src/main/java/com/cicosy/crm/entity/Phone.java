@@ -8,8 +8,8 @@ import lombok.Data;
 @Data
 public class Phone extends BaseEntity {
 
-	private String phoneNumber;
-	private boolean active;
-	@ManyToOne
-	private Contact contact;
+    private String phoneNumber;
+    private boolean active;
+    @ManyToOne
+    private Contact contact;
 }

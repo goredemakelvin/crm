@@ -5,16 +5,28 @@ import com.cicosy.crm.repo.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-@Service
-public class CustomerServiceImp  extends CustomerService{
-	
-	@Autowired
-	private CustomerRepository customerRepository;
+import java.util.List;
+import java.util.Optional;
 
-	@Override
-	public Customer save(Customer t) {
-		// TODO Auto-generated method stub
-		return customerRepository.save(t);
-	}
+@Service
+public class CustomerServiceImp extends CustomerService {
+
+    @Autowired
+    private CustomerRepository customerRepository;
+
+    @Override
+    public Customer save(Customer t) {
+        return customerRepository.save(t);
+    }
+
+    @Override
+    public Optional<Customer> findById(Long id) {
+        return customerRepository.findById(id);
+    }
+
+    @Override
+    public List<Customer> findAll() {
+        return customerRepository.findAll();
+    }
 
 }

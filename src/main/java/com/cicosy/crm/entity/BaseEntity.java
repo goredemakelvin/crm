@@ -12,7 +12,6 @@ import java.io.Serializable;
 @MappedSuperclass
 public abstract class BaseEntity implements Serializable {
 
-
     @Id
     @GeneratedValue
     @Column(columnDefinition = "BIGINT(20)", updatable = false, nullable = false)
