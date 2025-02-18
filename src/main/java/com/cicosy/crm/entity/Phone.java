@@ -1,14 +1,13 @@
 package com.cicosy.crm.entity;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
+import lombok.Data;
 
 @Entity
-public class Phone {
-	
-	@Id
-	private Long id;
+@Data
+public class Phone extends BaseEntity {
+
 	private String phoneNumber;
 	private boolean active;
 	@ManyToOne

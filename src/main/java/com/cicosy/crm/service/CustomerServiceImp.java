@@ -1,10 +1,9 @@
 package com.cicosy.crm.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
 import com.cicosy.crm.entity.Customer;
 import com.cicosy.crm.repo.CustomerRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 @Service
 public class CustomerServiceImp  extends CustomerService{
