@@ -1,4 +1,4 @@
-package com.cicosy.crm.web.controller.customer;
+package com.cicosy.crm.web.customer;
 
 import com.cicosy.crm.web.dto.CustomerDto;
 import org.springframework.stereotype.Controller;
@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/customer")
 public class CustomerController {
-
 
     @PostMapping("/save")
     public String saveCustomer(@RequestBody CustomerDto customerDto) {
